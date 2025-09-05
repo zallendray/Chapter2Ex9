@@ -1,20 +1,29 @@
-// Chapter2Ex9.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/*
+File Name Chapter2Ex9
+Programmer: Mark Goldstien
+Date: 09/25
+Requirements:
+Find the size of the various data types and output to screen.
+*/
 
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int number = 1;
+    bool tf = true;
+    char alpha = 'c';
+    string phrase = "This is a test";
+    float dec1 = 2.5;
+    double bigDec = 3.14159265;
+   
+    cout << sizeof(number) << endl;
+    cout << sizeof(tf) << endl;
+    cout << sizeof(alpha) << endl;
+    cout << sizeof(phrase) << endl;
+    cout << sizeof(dec1) << endl;
+    cout << sizeof(bigDec) << endl;
+
+    cout << "Hello World!\n";
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
